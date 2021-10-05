@@ -46,7 +46,7 @@
                     <v-carousel hide-delimiters height="500">
                         <v-carousel-item v-for="(item,i) in showcase_imgs" :key="i" :src="item"></v-carousel-item>
                     </v-carousel>
-                    <v-card class="mt-5 elevation-1 rounded-0">
+                    <v-card class="mt-5 elevation-0 rounded-0">
 
                         <v-row class="pa-6">
                             <v-col class="text-center">
