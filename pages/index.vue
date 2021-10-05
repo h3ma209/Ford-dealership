@@ -5,13 +5,13 @@
                 <v-row align="center" justify="center" class="ma-0 ">
                     <v-col class="text-left description fill-height d-flex justify-center align-center px-14">
                         <div class="px-7">
-                            <h1 class="mb-4 ">
+                            <h1 class="mb-5 ">
                                 Shelby GT500
                             </h1>
                             <p>
                                 Pairing a 5.2L supercharged V8 with a dual-clutch TREMEC® 7-speed transmission, the 2021 Ford® Mustang Shelby GT500 delivers tire-smoking performance.
                             </p>
-                            <v-btn @click="$vuetify.goTo('#about-section')" large class="rounded-0 mt-5">Learn More</v-btn>
+                            <v-btn @click="$vuetify.goTo('#about-section')" large class="rounded-0 mt-5 primary">Learn More</v-btn>
                         </div>
                     </v-col>
                     <v-col class="px-14 fill-height">
@@ -79,10 +79,10 @@
                     <v-row class="fill-height" align="center" justify="center">
                         <v-col>
                             <div>
-                                <h1 class="mb-6">
+                                <h1 class="mb-5">
                                     2021 Mustang Shelby® GT500®
                                 </h1>
-                                <p style="width:80%">
+                                <p style="width:80%" class="mb-5">
                                     GT500 the american muscle icon is back in 2021 with new 5.2L supercharged V8 with a dual-clutch TREMEC® 7-speed transmission, the 2021 Ford® Mustang Shelby GT500 delivers tire-smoking performance.
                                 </p>
                                 <v-btn large class="rounded-0 mr-3" color="primary">Build</v-btn>
@@ -95,37 +95,9 @@
 
         </div>
         <div class="whitespace"></div>
-        <div class="video">
-            <v-row class="fill-height" align="center" justify="center">
-
-                <v-col class="video-text pa-14 fill-height white--text">
-                    <v-row class="fill-height" align="center" justify="center">
-                        <v-col>
-                            <div>
-                                <h1 class="mb-6">
-                                    Want to know more?
-                                    watch these great reviews
-                                </h1>
-
-                                <v-btn large class="rounded-0 mr-3" color="primary">Performance</v-btn>
-                                <v-btn large class="rounded-0">Experience</v-btn>
-                            </div>
-                        </v-col>
-                    </v-row>
-                </v-col>
-
-                <v-col>
-                    <div class="video-container">
-                        <iframe src="https://www.youtube.com/embed/wecVzPzf8R4?start=5 &autoplay=1&mute=1&loop=1&rel=0&showinfo=0&iv_load_policy=3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                </v-col>
-            </v-row>
-
-        </div>
-        <div class="whitespace"></div>
         <div class="features">
             <v-row>
-                
+
                 <v-spacer></v-spacer>
 
                 <v-card class="mx-5" max-width="400">
@@ -175,6 +147,35 @@
 
             </v-row>
         </div>
+        <div class="whitespace"></div>
+        <div class="video">
+            <v-row class="fill-height" align="center" justify="center">
+
+                <v-col class="video-text pa-14 fill-height white--text">
+                    <v-row class="fill-height" align="center" justify="center">
+                        <v-col>
+                            <div>
+                                <h1 class="mb-6">
+                                    Want to know more?
+                                    watch these great reviews
+                                </h1>
+
+                                <v-btn large class="rounded-0 mr-3" color="primary">Performance</v-btn>
+                                <v-btn large class="rounded-0">Experience</v-btn>
+                            </div>
+                        </v-col>
+                    </v-row>
+                </v-col>
+
+                <v-col>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/wecVzPzf8R4?start=5 &autoplay=1&mute=1&loop=1&rel=0&showinfo=0&iv_load_policy=3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </v-col>
+            </v-row>
+
+        </div>
+        <div class="whitespace"></div>
 
     </div>
 </template>
@@ -209,7 +210,7 @@ export default {
     background: rgba(0, 0, 0, 0.4);
 }
 .v-parallax__content {
-    padding: 0;
+    padding: 0 !important;
 }
 .whitespace {
     height: 20vh;
